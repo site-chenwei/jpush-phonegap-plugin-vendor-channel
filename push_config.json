@@ -1,0 +1,12 @@
+{
+  "applicationId": "your_android_package_id",
+  "JPUSH_APPKEY": "your_jpush_appkey",
+  "JPUSH_CHANNEL": "developer-default",
+  "XIAOMI_APPID": "MI-小米的APPID",
+  "XIAOMI_APPKEY": "MI-小米的APPKEY",
+  "OPPO_APPKEY": "OP-oppo的APPKEY",
+  "OPPO_APPID": "OP-oppo的APPID",
+  "OPPO_APPSECRET": "OP-oppo的APPSECRET",
+  "VIVO_APPKEY": "vivo的APPKEY",
+  "VIVO_APPID": "vivo的APPID"
+}
