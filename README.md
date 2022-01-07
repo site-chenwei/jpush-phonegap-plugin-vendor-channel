@@ -3,10 +3,12 @@
 
 华为、小米通道已测试通过生产使用中，oppo、vivo由于需要将应用上架到市场才能正常使用，故未将代码放在此插件中，若需要，可单独联系
 ### 使用说明
-通过git下载源码后，以本地插件的方式使用
-![img.png](img.png)
+安装：
+```
+cordova plugin add jpush-phonegap-plugin-vendor-channel --variable APP_KEY=your_jpush_app_key
+```
+配置：
 agconnect-services.json为华为厂商通道集成文件，在华为开放平台配置好推送相关信息够即可下载，需放在项目根目录下。
-
 push_config.json为其他厂商通过配置文件，需放在项目根目录
 ![img_1.png](img_1.png)
 
