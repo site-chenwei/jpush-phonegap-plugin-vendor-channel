@@ -1,6 +1,6 @@
 {
   "name": "jpush-phonegap-plugin-vendor-channel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "极光推送厂商通道集成Cordova插件",
   "cordova": {
     "id": "jpush-phonegap-plugin-vendor-channel",
@@ -24,6 +24,21 @@
   "devDependencies": {
     "cordova-plugin-device": "*"
   },
+  "files": [
+    "hooks",
+    "ionic",
+    "src",
+    "www",
+    ".gitignore",
+    "agconnect-services.json",
+    "img_1.png",
+    "LICENSE",
+    "package.json",
+    "package-lock.json",
+    "plugin.xml",
+    "push_config.json",
+    "README.md"
+  ],
   "author": "chenwei116057@gmail.com",
   "license": "MIT",
   "bugs": {
