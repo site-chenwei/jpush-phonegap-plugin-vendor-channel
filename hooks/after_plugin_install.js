@@ -132,6 +132,8 @@ function updateAppGradle(file) {
                     "                JPUSH_PKGNAME : '" + pushConfig.applicationId + "',\n" +
                     "                JPUSH_APPKEY  : '" + pushConfig.JPUSH_APPKEY + "',\n" +
                     "                JPUSH_CHANNEL : '" + pushConfig.JPUSH_CHANNEL + "',\n" +
+                    "                MEIZU_APPID  : '" + pushConfig.MEIZU_APPID + "',\n" +
+                    "                MEIZU_APPKEY  : '" + pushConfig.MEIZU_APPKEY + "',\n" +
                     "                XIAOMI_APPID  : '" + pushConfig.XIAOMI_APPID + "',\n" +
                     "                XIAOMI_APPKEY : '" + pushConfig.XIAOMI_APPKEY + "',\n" +
                     "                OPPO_APPKEY   : '" + pushConfig.OPPO_APPKEY + "',\n" +
@@ -143,11 +145,15 @@ function updateAppGradle(file) {
             }
         }
         if (index) {
-            lines.splice(index, 0, "        implementation 'cn.jiguang.sdk:jcore:2.9.0'  \n" +
-                "       implementation 'cn.jiguang.sdk:jpush:4.3.0'  \n" +
-                "       implementation 'com.huawei.hms:push:6.1.0.300'\n" +
-                "       implementation 'cn.jiguang.sdk.plugin:huawei:4.3.0'\n" +
-                "       implementation 'cn.jiguang.sdk.plugin:xiaomi:4.3.0' \n"
+            lines.splice(index, 0,
+                "        implementation 'cn.jiguang.sdk:jcore:2.9.0'\n" +
+                "        implementation 'cn.jiguang.sdk:jpush:4.3.0'\n" +
+                "        implementation 'com.huawei.hms:push:6.1.0.300'\n" +
+                "        implementation 'cn.jiguang.sdk.plugin:huawei:4.3.0'\n" +
+                "        implementation 'cn.jiguang.sdk.plugin:meizu:4.3.0'\n" +
+                "        implementation 'cn.jiguang.sdk.plugin:vivo:4.3.0'\n" +
+                "        implementation 'cn.jiguang.sdk.plugin:oppo:4.3.0'\n" +
+                "        implementation 'cn.jiguang.sdk.plugin:xiaomi:4.3.0' \n"
             );
         }
         lines.splice(lines.length - 1, 0, "apply plugin: 'com.huawei.agconnect' // ADD THIS AT THE TOP");

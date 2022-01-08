@@ -1,7 +1,6 @@
 # jpush-phonegap-plugin-vendor-channel
-极光推送厂商通道集成Cordova插件
+极光推送厂商通道(华为、小米、魅族、oppo、vivo)集成Cordova插件
 
-华为、小米通道已测试通过生产使用中，oppo、vivo由于需要将应用上架到市场才能正常使用，故未将代码放在此插件中，若需要，可单独联系
 ### 使用步骤及说明
 #### 1.获取华为推送配置文件agconnect-services.json
 ![img_2.png](img_2.png)
@@ -15,6 +14,8 @@ push_config.json为除华为外其他厂商(小米等)的推送配置信息，�
   "applicationId": "your_android_package_id",
   "JPUSH_APPKEY": "your_jpush_appkey",
   "JPUSH_CHANNEL": "developer-default",
+  "MEIZU_APPKEY": "MZ-魅族的APPKEY",
+  "MEIZU_APPID": "MZ-魅族的APPID",
   "XIAOMI_APPID": "MI-小米的APPID",
   "XIAOMI_APPKEY": "MI-小米的APPKEY",
   "OPPO_APPKEY": "OP-oppo的APPKEY",

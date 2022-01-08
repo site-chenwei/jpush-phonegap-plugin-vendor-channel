@@ -2,6 +2,8 @@
   "applicationId": "your_android_package_id",
   "JPUSH_APPKEY": "your_jpush_appkey",
   "JPUSH_CHANNEL": "developer-default",
+  "MEIZU_APPKEY": "MZ-魅族的APPKEY",
+  "MEIZU_APPID": "MZ-魅族的APPID",
   "XIAOMI_APPID": "MI-小米的APPID",
   "XIAOMI_APPKEY": "MI-小米的APPKEY",
   "OPPO_APPKEY": "OP-oppo的APPKEY",
