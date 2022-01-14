@@ -12,7 +12,7 @@ var REPOSITORIES = "ext.repos = {\n" +
     "    mavenCentral()\n" +
     "    maven { url 'https://maven.aliyun.com/repository/public' }\n" +
     "    maven { url 'https://maven.aliyun.com/repository/google' }\n" +
-    "    maven { url 'http://developer.huawei.com/repo/' }\n" +
+    "    maven { url 'https://developer.huawei.com/repo/' }\n" +
     "}"
 COMMENT = "//This line is added by cordova-plugin-hms-push plugin";
 var NEW_LINE = "\n";
@@ -83,7 +83,7 @@ function updateRepositories(file) {
                 lines[i] = "      maven { url 'https://maven.aliyun.com/repository/public' }";
             }
             if (line.indexOf("google()") >= 0) {
-                lines[i] = "        maven { url 'https://maven.aliyun.com/repository/google' } " + NEW_LINE + "        mavenCentral()" + NEW_LINE + "        maven {url 'http://developer.huawei.com/repo/' }";
+                lines[i] = "        maven { url 'https://maven.aliyun.com/repository/google' } " + NEW_LINE + "        mavenCentral()" + NEW_LINE + "        maven {url 'https://developer.huawei.com/repo/' }";
             }
             if (line.indexOf("mavenCentral()") >= 0) {
                 lines[i] = "";
