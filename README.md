@@ -35,3 +35,15 @@ cordova plugin add jpush-phonegap-plugin-vendor-channel --variable APP_KEY=your_
 ```
 #### 4.打包测试
 dev打包和release打包时所用的证书都应该为在厂商开放平台配置过得指纹，若打包证书不一致，厂商通道也会启用失败。
+
+
+## 厂商通道启用失败常见原因
+#### 1.未配置打包证书
+<img width="1027" alt="image" src="https://user-images.githubusercontent.com/23025255/160376710-0122fb78-8c6e-470b-9cbd-34d698880fd2.png">
+
+如上图所示，未在app模块的build.grade中配置打包所用证书
+#### 2.华为平台证书指纹配置错误
+华为平台证书指纹与其他厂商平台均不一样，需要配置SHA256证书指纹
+
+#### 3.push_config.json中错误修改
+  在修改push_config.json为自身配置时，请不要删除前缀！如小米key,配置值应为MI-key
